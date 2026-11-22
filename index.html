@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Story Archive / បណ្ណសារសាច់រឿង</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-box-archive spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">បណ្ណសារសាច់រឿង / Story Archive</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-card">
+            <div class="badge">🗄️ UNIVERSE HUOKAING THARA • COMPLETE STORY ARCHIVE</div>
+            <h2 class="km">បណ្ណសាររក្សាទុកសាច់រឿង វគ្គនិទាន និងស្នាដៃកន្លងមក</h2>
+            <h2 class="en">Complete Archive of Stories, Episodes & Past Releases</h2>
+            <p class="km">
+                ស្វែងរក និងរក្សាទុកសាច់រឿងទាំងអស់ក្រោម <strong>UNIVERSE HUOKAING THARA Group</strong> ដែលមានការរួមចំណែកពីលោក <strong>ជອນ រតនៈ</strong> និងអភិវឌ្ឍប្រព័ន្ធដោយក្រុមអ្នកសរសេរកូដជំនាញ។
+            </p>
+            <p class="en">
+                Browse and index archived stories under <strong>UNIVERSE HUOKAING THARA Group</strong>, shaped with contributor <strong>Mr. Chorn Rothanak</strong> and engineered by our elite programmers and developers.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="archiveSearch" placeholder="ស្វែងរកក្នុងបណ្ណសារ... / Search archive ID, title, category, year...">
+                </div>
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">All / ទាំងអស់</button>
+                    <button class="pill-btn" data-filter="ghost">Ghost Archive / រឿងខ្មោច</button>
+                    <button class="pill-btn" data-filter="drama">Drama Archive / មនោសញ្ចេតនា</button>
+                    <button class="pill-btn" data-filter="special">Specials / កម្មវិធីពិសេស</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Archive Grid -->
+        <section class="archive-section">
+            <h3 class="section-heading">
+                <i class="fa-solid fa-folder-open"></i>
+                <span class="km">កំណត់ត្រាសាច់រឿងក្នុងបណ្ណសារ (Archived Story Records)</span>
+                <span class="en">Archived Story Records</span>
+            </h3>
+
+            <div class="archive-grid" id="archiveGrid">
+
+                <!-- Record 1 -->
+                <article class="archive-card featured" data-cat="ghost">
+                    <div class="card-top">
+                        <span class="arc-id">ARC-2026-001</span>
+                        <span class="status-pill">VERIFIED ARCHIVE</span>
+                    </div>
+                    <h4 class="km">កម្រងរឿងព្រេង និងបទពិសោធន៍ព្រឺរោម (វគ្គបណ្ណសារ)</h4>
+                    <h4 class="en">Khmer Folklore & Eerie Chronicles (Archive Set)</h4>
+                    <p class="km">កំណត់ត្រារឿងរន្ធត់ព្រឺរោម និងអប្បិយជំនឿដែលបានចងក្រងជាមួយលោក ជອນ រតនៈ សម្រាប់ការរក្សាទុកយូរអង្វែង។</p>
+                    <p class="en">Archived supernatural folklore and real-life eerie accounts compiled with Mr. Chorn Rothanak for long-term access.</p>
+                    <div class="card-footer">
+                        <span class="arc-meta"><i class="fa-regular fa-calendar"></i> 2026 • Ghost Stories</span>
+                        <button class="inspect-btn"
+                            data-id="ARC-2026-001"
+                            data-title="Khmer Folklore & Eerie Chronicles (Archive Set)"
+                            data-cat="Ghost Stories Khmer Archive"
+                            data-credit="Mr. Chorn Rothanak • UNIVERSE HUOKAING THARA"
+                            data-summary="Preserved in the group story archive with bilingual metadata, category tags, and narrative notes.">
+                            <span class="km">មើលកំណត់ត្រា</span> / <span class="en">Inspect Record</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Record 2 -->
+                <article class="archive-card" data-cat="drama">
+                    <div class="card-top">
+                        <span class="arc-id">ARC-2026-002</span>
+                        <span class="status-pill">VERIFIED ARCHIVE</span>
+                    </div>
+                    <h4 class="km">បណ្ណសាររឿងមនោសញ្ចេតនា និងជីវិត</h4>
+                    <h4 class="en">Drama & Life Narrative Archive</h4>
+                    <p class="km">រក្សាទុកសាច់រឿងមនោសញ្ចេតនា ដំណើរជីវិត និងស្នាដៃវីដេអូរឿងដែលបានចេញផ្សាយ។</p>
+                    <p class="en">Indexed collection of dramatic narratives, life journeys, and published story video releases.</p>
+                    <div class="card-footer">
+                        <span class="arc-meta"><i class="fa-regular fa-calendar"></i> 2026 • Drama & Story</span>
+                        <button class="inspect-btn"
+                            data-id="ARC-2026-002"
+                            data-title="Drama & Life Narrative Archive"
+                            data-cat="Drama & Narrative Archive"
+                            data-credit="UNIVERSE HUOKAING THARA Production Unit"
+                            data-summary="Includes storyline summaries, release classifications, and cross-module references across the group portal.">
+                            <span class="km">មើលកំណត់ត្រា</span> / <span class="en">Inspect Record</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Record 3 -->
+                <article class="archive-card" data-cat="special">
+                    <div class="card-top">
+                        <span class="arc-id">ARC-2026-003</span>
+                        <span class="status-pill">VERIFIED ARCHIVE</span>
+                    </div>
+                    <h4 class="km">បណ្ណសារកម្មវិធីពិសេស និងការចាក់បញ្ចាំង</h4>
+                    <h4 class="en">Special Releases & Screening Archive</h4>
+                    <p class="km">កត់ត្រាព្រឹត្តិការណ៍ពិសេស ការចាក់បញ្ចាំងភាពយន្ត និងសេចក្តីប្រកាសផ្លូវការរបស់ក្រុម។</p>
+                    <p class="en">Historical record of special showcases, cinema screenings, and official announcements under the group.</p>
+                    <div class="card-footer">
+                        <span class="arc-meta"><i class="fa-regular fa-calendar"></i> 2026 • Specials</span>
+                        <button class="inspect-btn"
+                            data-id="ARC-2026-003"
+                            data-title="Special Releases & Screening Archive"
+                            data-cat="
