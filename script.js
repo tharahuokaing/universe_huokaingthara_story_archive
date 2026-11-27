@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         searchInput.addEventListener("input", applyFilters);
     }
 
-    // 4. Archive Record Modal
+    // 4. Archive Record Dossier Modal
     inspectButtons.forEach(btn => {
         btn.addEventListener("click", () => {
             document.getElementById("modalArcId").textContent = btn.getAttribute("data-id");
@@ -96,4 +96,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (archiveModal)
+    if (archiveModal) {
+        archiveModal.addEventListener("click", (e) => {
+            if (e.target === archiveModal) {
+                archiveModal.classList.add("hidden");
+            }
+        });
+    }
+});
