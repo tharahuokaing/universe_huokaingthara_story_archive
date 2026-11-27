@@ -140,7 +140,7 @@ body {
 .hero-card p {
     color: var(--text-muted);
     font-size: 0.94rem;
-    max-width: 840px;
+    max-width: 860px;
     margin: 0 auto 0.5rem auto;
 }
 
@@ -258,7 +258,7 @@ body {
     font-size: 0.72rem;
     font-weight: 700;
     color: var(--accent-color);
-    letter-spacing: 0.8px;
+    letter-spacing: 0.7px;
     font-family: monospace;
 }
 
@@ -272,14 +272,14 @@ body {
 }
 
 .archive-card h4 {
-    font-size: 1.06rem;
+    font-size: 1.08rem;
     margin-bottom: 6px;
 }
 
 .archive-card p {
     font-size: 0.88rem;
     color: var(--text-muted);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .card-footer {
@@ -290,6 +290,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .arc-meta {
@@ -303,7 +304,7 @@ body {
     color: var(--accent-color);
     padding: 6px 12px;
     border-radius: 6px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 700;
     cursor: pointer;
 }
@@ -316,4 +317,92 @@ body {
 /* Modal */
 .modal-backdrop {
     position: fixed;
-    inset:
+    inset: 0;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 3000;
+}
+
+.modal-backdrop.hidden {
+    display: none;
+}
+
+.modal-card {
+    background: var(--bg-card);
+    border: 2px solid var(--accent-color);
+    border-radius: 16px;
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 0 35px rgba(0, 240, 255, 0.3);
+}
+
+.modal-badge {
+    display: inline-block;
+    background: rgba(0, 240, 255, 0.15);
+    color: var(--accent-color);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.modal-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.modal-body {
+    background: var(--bg-input);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 0.86rem;
+    line-height: 1.75;
+    margin-bottom: 1.2rem;
+}
+
+.modal-body p {
+    margin-bottom: 8px;
+}
+
+.accent-txt {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.modal-summary {
+    color: var(--text-muted);
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(148, 163, 184, 0.25);
+}
+
+.full-width {
+    width: 100%;
+    padding: 11px;
+}
+
+/* Footer */
+.site-footer {
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 1rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
